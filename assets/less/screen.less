@@ -1,0 +1,155 @@
+@import "bootstrap.less";
+@import "../../bower_components/jquery-ui/themes/base/jquery-ui.css";
+
+@font-size: 12px;
+@line-height: 1.2;
+@lines-to-show: 3;
+
+
+body {
+  font-family: 'Karla', sans-serif;
+  color: black;
+  margin-bottom: 30vh;
+}
+
+h2{
+  margin:0;
+  text-align: center;
+  font-size: 20px; 
+}
+
+
+h3{
+  margin:0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.container {
+  width: auto;
+  padding: 0; 
+  margin:0;
+}
+
+
+
+.wkshop{
+  &:nth-child(1){
+    background-image: linear-gradient(90deg, #ED4264, #FFEDBC);
+  }
+  &:nth-child(2){
+    background-image: linear-gradient(90deg, #9ACFFF, #778888);
+  }
+  &:nth-child(3){
+    background-image: linear-gradient(90deg, #FFCA00, #FF6682);
+  }
+  &:nth-child(4){
+    background-image: linear-gradient(90deg, #ED4264, #FFEDBC);
+  }
+  &:nth-child(5){
+    background-image: linear-gradient(90deg, #97EAFF, #3DFFE0);
+  }
+  .row.headings{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: #FFF;
+    > div{
+      border:none;
+    }
+  }
+
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+    .moment{
+      color: blue;
+      background-color: #FFF;
+      height:  @font-size*@line-height*@lines-to-show + 22;
+      padding-top: 15px;
+      text-align:center;
+      text-transform: uppercase;
+      font-size: @font-size;
+      font-weight: bold;
+    }
+  }
+  .row > div{
+    border: 1px solid #000;
+    padding: 10px;
+  }
+
+  p{
+    font-size: @font-size;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    line-height: @line-height;
+    -webkit-line-clamp: @lines-to-show;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    height:  @font-size*@line-height*@lines-to-show;
+    margin-bottom:0;
+  }
+
+  .rempli{
+    background-color: #FFF;
+    transition: all 1s linear;
+  }
+  .vide{
+    pointer-events: none;
+  }
+  .active{
+    background-color: rgba(255,255,0,0.5);
+  }
+
+}
+
+.readText{
+  z-index: 22;
+  height: 30vh;
+  position: fixed;
+  top:auto !important; 
+  bottom: 0 !important; 
+  left:0;
+  right:0;
+  background-color: #FFF; 
+  overflow:scroll;
+  padding: 20px 50px;
+
+  #handle {
+      width: 100%;
+      height: 5px;
+      top: 0px;
+      background-color: #000;
+  }
+  .content{
+    position:relative;
+    .content-head{
+      position:absolute; 
+      width: 200px;
+      h2,h3{
+        text-align:left;
+      }
+    }
+    p{
+      width: 50%;
+      min-width: 20%;
+      margin:auto;
+    }
+
+  }
+
+}
+
+.btn-group {
+  position:fixed; 
+  right:0;
+  z-index: 21;
+}
+
+.col-xs-2{
+  width:9.44%;
+}
+
+

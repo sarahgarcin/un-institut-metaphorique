@@ -1,0 +1,27 @@
+{
+  "name": "facture static",
+  "authors": [
+    "dcfvg <qwsx@dcfvg.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "lodash": "~4.17.10",
+    "bower": "*",
+    "handlebars": "~3.0.0",
+    "bootstrap": "~3.3.5",
+    "papaparse": "papa.parse#^4.6.1",
+    "jquery-ui": "^1.12.1"
+  }
+}
