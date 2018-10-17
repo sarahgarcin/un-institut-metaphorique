@@ -87,7 +87,7 @@ function getRanges() {
   gapi.client.sheets.spreadsheets.values.batchGet({
     spreadsheetId: spreadsheetId,
     majorDimension: 'ROWS',
-    ranges: ['data!A:O'],
+    ranges: ['data!A:O', 'interview!A:I'],
   }).then(function(response) {
     var csvs = _.map(response.result.valueRanges, function(range){
 

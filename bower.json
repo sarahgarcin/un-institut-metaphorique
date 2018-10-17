@@ -22,6 +22,7 @@
     "handlebars": "~3.0.0",
     "bootstrap": "~3.3.5",
     "papaparse": "papa.parse#^4.6.1",
-    "jquery-ui": "^1.12.1"
+    "jquery-ui": "^1.12.1",
+    "highlight": "^9.13.1"
   }
 }

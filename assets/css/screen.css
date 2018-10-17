@@ -7159,7 +7159,6 @@ h3 {
   color: blue;
   background-color: #FFF;
   height: 65.2px;
-  padding-top: 15px;
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -7201,7 +7200,7 @@ h3 {
   right: 0;
   background-color: #FFF;
   overflow: scroll;
-  padding: 20px 50px;
+  padding: 40px 50px;
 }
 .readText #handle {
   width: 100%;
@@ -7232,4 +7231,23 @@ h3 {
 }
 .col-xs-2 {
   width: 9.44%;
+}
+.highlight {
+  background-color: #fff34d;
+  -moz-border-radius: 5px;
+  /* FF1+ */
+  -webkit-border-radius: 5px;
+  /* Saf3-4 */
+  border-radius: 5px;
+  /* Opera 10.5, IE 9, Saf5, Chrome */
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  /* FF3.5+ */
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  /* Saf3.0+, Chrome */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  /* Opera 10.5+, IE 9.0 */
+}
+.highlight {
+  padding: 1px 4px;
+  margin: 0 -4px;
 }

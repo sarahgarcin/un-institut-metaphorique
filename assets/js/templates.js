@@ -66,3 +66,6 @@ this["uim"]["data"] = Handlebars.template({"1":function(depth0,helpers,partials,
     + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.dehors : depth0),{"name":"each","hash":{},"fn":this.program(3, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "</div>\n\n\n";
 },"useData":true});
+this["uim"]["itw"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    return "<div>\n	<p>test hello</p>\n	<div class=\"interview Anna\">\n  </div>\n</div>";
+},"useData":true});
